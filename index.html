@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portofolio Saya</title>
+
+    <!-- Tailwind CSS CDN -->
+    <!--script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script-->
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+     <header class="main-header">
+        <!--Foto Diri-->
+        <div class="logo"></div>
+        <!-- Logo Text -->
+        <h1 class="logo-text">PORTOFOLIO</h1>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#education">Education Background</a>
+            <a href="#experience">Professional Experience</a>
+            <a href="#activities">Campus Activities</a>
+            <a href="#skills">Technical Skills</a>
+            <a href="#lets-talk">Let’s Talk!</a>
+        </nav>
+    </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>
+            </p>Welcome <span id="welcome-speech"></span> to My Portfolio<p>
+            </h1>
+        <div class="banner-img"></div>
+    </section>
+
+    <script>
+        // Tampilkan popup untuk meminta nama
+        let nama = prompt("Please enter your name:");
+        // Jika nama diisi, tampilkan di halaman, jika tidak, tampilkan "Guest"
+        document.getElementById('welcome-speech').textContent = nama ? nama : "Guest";
+    </script>
+
+     <section id="about">
+      <h2>About Me</h2>
+      <p>Saya adalah mahasiswa Teknik Industri yang memiliki minat di bidang project management dan sistem kualitas. Saya senang belajar hal baru dan suka tantangan.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education Background</h2>
+      <ul>
+        <li>2021 – Sekarang: S1 Teknik Industri, Universitas Sebelas Maret</li>
+        <li>2018 – 2021: SMA Negeri XYZ</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <ul>
+        <li>2024: Internship – Koordinator Lab Statistik Industri</li>
+        <li>2023: Penelitian – Observasi UMKM Rambak Sapi Karanganyar</li>
+        <li>2023: Panitia – Divisi Logistik dan Humas Seminar Industri</li>
+      </ul>
+    </section>
+
+    <section id="activities">
+      <h2>Campus Activities</h2>
+
+      <div class="activities-container">
+        <div class="activity-card">
+            <h3>Bootcamp RevoU – Software Engineering (2025)</h3>
+            <p>Mengikuti bootcamp intensif selama 8 minggu mempelajari HTML, CSS, JavaScript, dan proyek pembuatan website portofolio.</p>
+        </div>
+
+        <div class="activity-card">
+            <h3>Asisten Praktikum Statistik Industri (2023–2024)</h3>
+            <p>Membantu mahasiswa lain dalam mengerjakan praktikum statistik, memberikan pengarahan, serta koreksi laporan.</p>
+        </div>
+
+        <div class="activity-card">
+            <h3>Training Statistik R dan Python (2023)</h3>
+            <p>Mengikuti pelatihan penggunaan software statistik R dan Python untuk analisis data dan visualisasi statistik.</p>
+        </div>
+
+        <div class="activity-card">
+            <h3>Industial Engineering Anniversary (2023)</h3>
+            <p>Mengikuti kegiatan perayaan ulang tahun teknik industri uns.</p>
+        </div>
+
+        <div class="activity-card">
+            <h3>Muslim Engineering Festival (2022)</h3>
+            <p>Menjadi panitia kegiatan keagamaan islam di fakultas teknik uns.</p>
+        </div>
+
+        <!-- Tambah lagi di sini jika kamu punya aktivitas lain -->
+    </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript (Basic)</li>
+        <li>Microsoft Excel & Google Sheets (Intermediate)</li>
+        <li>R & Python (Statistical Tools)</li>
+        <li>Project Management Tools (Notion, Trello)</li>
+      </ul>
+    </section>
+  </main>
+
+    <section id="lets-talk">
+        <h2>Let’s Talk!</h2>
+        <p>If you’re interested in working together or have questions, just send me a message!</p>
+    
+        <form id="lets-talk-form">
+            <div>
+                <label for="name-input">Name:</label>
+                <input type="text" id="name-input" name="name" required>
+            </div>
+
+            <div>
+                <label for="message-input">Message:</label>
+                <textarea id="message-input" name="message" required></textarea>
+            </div>
+
+            <button type="button" onclick="validateForm();">Send Message</button>
+        </form>
+    </section>
+
+    <h3>Submitted Messages</h3>
+    <table id="message-table">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+        <!-- Baris hasil input akan ditambahkan di sini -->
+        </tbody>
+    </table>
+
+    
+
+</body>
+  <footer>
+    <p>&copy; 2025 Erwin Agil Nur Rohmat. All rights reserved.</p>
+  </footer>
+
+  <!-- Javascript External -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
