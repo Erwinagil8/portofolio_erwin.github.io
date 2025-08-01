@@ -1,0 +1,254 @@
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 30px;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    border: 2px solid #333;      
+    border-radius: 6px;          
+    padding: 8px 16px;          
+    text-decoration: none;      
+    color: #333;                
+    background: #fff;           
+    display: flex;       
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; 
+    height:auto; 
+    min-width: auto; 
+}
+
+.logo {
+    background-image: url(https://artikel.rumah123.com/wp-content/uploads/sites/41/2023/09/12160753/gambar-foto-profil-whatsapp-kosong.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#home {
+    padding: 16px;
+    background: #f8fafc; 
+}
+
+#home h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.banner-img {
+    height: 300px;
+    background: linear-gradient(135deg, #c3e0f7 0%, #f8fafc 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1;
+    color: #333;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 30px;
+}
+
+#about h2 {
+    text-align: center;
+}
+
+#education h2 {
+    text-align: center;
+}
+
+#experience h2 {
+    text-align: center;
+}
+
+#activities h2 {
+    text-align: center;
+}
+
+#skills h2 {
+    text-align: center;
+}
+
+.activities-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scroll-snap-type: x mandatory;
+}
+
+.activity-card {
+  flex: 0 0 300px; 
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  scroll-snap-align: start;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  min-height: 180px;
+}
+
+.activity-card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.activity-card p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Tambahan agar scroll bar lebih halus dan responsif */
+.activities-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.activities-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.activities-container::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 1px;
+    margin-top: 30px;
+}
+
+#lets-talk {
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+#lets-talk h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#lets-talk p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#lets-talk form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#lets-talk label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#lets-talk input[type="text"],
+#lets-talk textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  resize: none;
+}
+
+#lets-talk button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#lets-talk button:hover {
+  background-color: #555;
+}
+
+#submit-result {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #e0ffe0;
+  border: 1px solid #a0d6a0;
+  border-radius: 4px;
+  display: none;
+}
+
+#message-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+#message-table th,
+#message-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+#message-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
